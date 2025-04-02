@@ -1,7 +1,7 @@
 # 🎮 HW_JSONDecoder – RAWG 遊戲資料查詢 App
 
-這是一個使用 [RAWG Video Games Database API](https://rawg.io/apidocs) 製作的 iOS 小專案。
-使用 Swift + UIKit 實作，主要練習 JSON 解碼、API 資料串接與 TableView 資料展示。
+- 這是一個使用 [RAWG Video Games Database API](https://rawg.io/apidocs) 製作的 iOS 小專案。
+- 使用 Swift + UIKit 實作，主要練習 JSON 解碼、API 資料串接與 TableView 資料展示。
 
 ---
 
@@ -67,6 +67,36 @@ API 文件清楚易懂，且支援免費帳號使用。
 - 如何解析 JSON 並展示在 `UITableView` 中
 - 評分圓環進度條的繪製邏輯（`CAShapeLayer`）
 - 專案架構與資料傳遞流程整理
+
+---
+
+## 📂 專案結構
+
+以下為本專案的主要目錄結構與檔案功能說明：
+
+```
+HW_JSONDecoder/
+├── Manager/
+│   └── APIKeyManager.swift               // 管理 Secrets.plist 的 API 金鑰讀取
+│
+├── View Controllers/
+│   ├── AllGameListTableViewController.swift   // 顯示遊戲清單與搜尋邏輯
+│   └── GameDetailViewController.swift         // 顯示遊戲詳細資訊
+│
+├── Views/
+│   └── GameTableViewCell.swift           // 遊戲 cell UI 設計與設定邏輯
+│
+├── Models/
+│   ├── GameListAPI.swift                 // 遊戲清單 API 的資料模型
+│   ├── GameDetailAPI.swift               // 遊戲詳細資料的資料模型
+│   └── GameTrailerAPI.swift              // 遊戲預告片 API 模型（目前未使用）
+│
+├── Secrets.plist.example                // API 金鑰格式範例（請勿提交 Secrets.plist）
+├── Assets.xcassets                      // App 所需圖片資源
+├── Main.storyboard                      // UI 介面設計（使用 Storyboard）
+└── README.md
+```
+
 ---
 
 ## 📦 安裝方式
