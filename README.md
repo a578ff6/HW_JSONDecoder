@@ -5,6 +5,18 @@
 
 ---
 
+## 📷 畫面預覽
+
+### 🔍 遊戲清單頁面（含搜尋）
+
+![遊戲清單頁面](Screenshots/list.png)
+
+### 📘 遊戲詳細頁面（（圖片、描述、評分圓環、分享、開啟網站））
+
+![遊戲詳細頁面](Screenshots/detail.png)
+
+---
+
 ## 🚀 專案目標
 
 1. 練習申請 API Key，閱讀 API 文件與觀察網站資料
@@ -45,18 +57,48 @@ API 文件清楚易懂，且支援免費帳號使用。
 
 ---
 
-## 📷 畫面預覽（可放 Screenshot）
+## 📖 專案相關文章
 
-- 遊戲清單（含搜尋）
-- 詳細頁（圖片、描述、評分圓環、分享、開啟網站）
+📘 Medium 教學文章： [從 RAWG API 到 iOS App｜解析與顯示 PC 遊戲資料](https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/c68-%E5%BE%9Erawg-api%E5%88%B0ios-%E8%A7%A3%E6%9E%90%E5%92%8C%E9%A1%AF%E7%A4%BApc%E9%81%8A%E6%88%B2%E6%95%B8%E6%93%9A-6469d7a7854f)
+
+這篇文章會詳細介紹：
+
+- RAWG API 的基本申請與使用方式
+- 如何解析 JSON 並展示在 `UITableView` 中
+- 評分圓環進度條的繪製邏輯（`CAShapeLayer`）
+- 專案架構與資料傳遞流程整理
+---
 
 ## 📦 安裝方式
 
 1. Clone 專案
 2. 使用 Xcode 開啟 `.xcodeproj`
 3. 安裝依賴（Kingfisher via Swift Package Manager）
-4. 將 `buildAPIURL` 中的 `myApiKey` 替換為你自己的 RAWG API key
+4. 確保有建立 Secrets.plist（見下方 🔑 設定）
 5. Run 起來！
+
+---
+
+## 🔑 設定 API Key（Secrets.plist）
+
+本專案使用 `Secrets.plist` 儲存 RAWG API 金鑰，避免將金鑰直接寫在程式中。
+
+- 本檔案已被 .gitignore 忽略，請勿上傳至 GitHub。
+- 可參考 Secrets.plist.example 範例。
+
+請在專案目錄中新增一個檔案 `Secrets.plist`，內容如下：
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" 
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>RAWG_API_KEY</key>
+    <string>your_api_key_here</string>
+</dict>
+</plist>
+```
 
 ---
 
@@ -69,5 +111,5 @@ API 文件清楚易懂，且支援免費帳號使用。
 
 ## 🙋‍♂️ 聯絡我 Contact
 
-- GitHub: [你的帳號](https://github.com/你的帳號)
-- Medium: [你的 Medium 名稱](https://medium.com/@你的帳號)
+- GitHub: [a578ff6](https://github.com/a578ff6)
+- Medium: [a578ff6](https://medium.com/@a578ff6)

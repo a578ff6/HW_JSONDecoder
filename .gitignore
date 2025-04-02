@@ -1,2 +1,5 @@
 # 保護敏感資料
 Secrets.plist
+
+# 忽略 SPM 快取資料夾
+xcshareddata/swiftpm/
