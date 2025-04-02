@@ -20,6 +20,9 @@
 		93448A722A93954E006AECB1 /* jf-openhuninn-2.0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93448A712A93954E006AECB1 /* jf-openhuninn-2.0.ttf */; };
 		93448A772A93B5E3006AECB1 /* GameDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93448A762A93B5E3006AECB1 /* GameDetailViewController.swift */; };
 		93448A792A93B683006AECB1 /* GameDetailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93448A782A93B683006AECB1 /* GameDetailAPI.swift */; };
+		938ED5582D9DA33E007768F5 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 938ED5572D9DA33E007768F5 /* Secrets.plist */; };
+		938ED55B2D9DA397007768F5 /* APIKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938ED55A2D9DA397007768F5 /* APIKeyManager.swift */; };
+		938ED55D2D9DA68D007768F5 /* Secrets.plist.example in Resources */ = {isa = PBXBuildFile; fileRef = 938ED55C2D9DA68D007768F5 /* Secrets.plist.example */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		93448A712A93954E006AECB1 /* jf-openhuninn-2.0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "jf-openhuninn-2.0.ttf"; sourceTree = "<group>"; };
 		93448A762A93B5E3006AECB1 /* GameDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailViewController.swift; sourceTree = "<group>"; };
 		93448A782A93B683006AECB1 /* GameDetailAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailAPI.swift; sourceTree = "<group>"; };
+		938ED5572D9DA33E007768F5 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
+		938ED55A2D9DA397007768F5 /* APIKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyManager.swift; sourceTree = "<group>"; };
+		938ED55C2D9DA68D007768F5 /* Secrets.plist.example */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Secrets.plist.example; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 		93448A532A934B4D006AECB1 /* HW_JSONDecoder */ = {
 			isa = PBXGroup;
 			children = (
+				938ED5592D9DA389007768F5 /* Manager */,
 				93448A752A93A603006AECB1 /* View Controllers */,
 				93448A742A93A5F2006AECB1 /* Views */,
 				93448A732A93A5DD006AECB1 /* Models */,
@@ -79,6 +86,8 @@
 				93448A5D2A934B4D006AECB1 /* Assets.xcassets */,
 				93448A5F2A934B4D006AECB1 /* LaunchScreen.storyboard */,
 				93448A622A934B4D006AECB1 /* Info.plist */,
+				938ED5572D9DA33E007768F5 /* Secrets.plist */,
+				938ED55C2D9DA68D007768F5 /* Secrets.plist.example */,
 				93448A712A93954E006AECB1 /* jf-openhuninn-2.0.ttf */,
 			);
 			path = HW_JSONDecoder;
@@ -109,6 +118,14 @@
 				93448A762A93B5E3006AECB1 /* GameDetailViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		938ED5592D9DA389007768F5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				938ED55A2D9DA397007768F5 /* APIKeyManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +193,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				93448A612A934B4D006AECB1 /* LaunchScreen.storyboard in Resources */,
+				938ED5582D9DA33E007768F5 /* Secrets.plist in Resources */,
+				938ED55D2D9DA68D007768F5 /* Secrets.plist.example in Resources */,
 				93448A722A93954E006AECB1 /* jf-openhuninn-2.0.ttf in Resources */,
 				93448A5E2A934B4D006AECB1 /* Assets.xcassets in Resources */,
 				93448A5C2A934B4D006AECB1 /* Main.storyboard in Resources */,
@@ -189,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938ED55B2D9DA397007768F5 /* APIKeyManager.swift in Sources */,
 				93448A692A9365BC006AECB1 /* AllGameListTableViewController.swift in Sources */,
 				93448A772A93B5E3006AECB1 /* GameDetailViewController.swift in Sources */,
 				93448A792A93B683006AECB1 /* GameDetailAPI.swift in Sources */,

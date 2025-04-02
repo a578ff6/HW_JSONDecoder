@@ -164,8 +164,9 @@ class AllGameListTableViewController: UITableViewController {
     /// - Returns: 一個表示API URL的可選URL對象。如果構建URL失敗，則返回nil。
     /// - Note: 主要考慮了兩種URL：一個用於檢索特定遊戲的詳細資訊，另一個用於檢索遊戲列表，還包括搜尋參數。
     func buildAPIURL(forGameId id: Int? = nil, searchQuery: String? = nil) -> URL? {
+        
         // 使用API密鑰
-        let myApiKey = "4001ecb101c24f03af97b09521063e66"
+        let myApiKey = APIKeyManager.rawgApiKey
         
         var urlString: String
         
@@ -293,7 +294,7 @@ extension AllGameListTableViewController: UISearchBarDelegate {
 //    // 從RAWG API獲取遊戲列表
 //    func fetchItems() {
 //
-//        let myApiKey = "4001ecb101c24f03af97b09521063e66"
+//        let myApiKey = ""
 //        let gameListUrlString = "https://api.rawg.io/api/games?key=\(myApiKey)"
 //
 //        if let gameUrl = URL(string: gameListUrlString) {
@@ -323,7 +324,7 @@ extension AllGameListTableViewController: UISearchBarDelegate {
 //
 //    /// 遊戲的詳細內容
 //    func fetchGameDetail(withId id: Int) {
-//        let myApiKey = "4001ecb101c24f03af97b09521063e66"
+//        let myApiKey = ""
 //        let gameDetailUrlString = "https://api.rawg.io/api/games/\(id)?key=\(myApiKey)"
 //
 //        if let gameDetailUrl = URL(string: gameDetailUrlString) {
@@ -432,7 +433,7 @@ extension AllGameListTableViewController: UISearchBarDelegate {
 //    // 從RAWG API獲取遊戲列表
 //    func fetchItems() {
 //
-//        let myApiKey = "4001ecb101c24f03af97b09521063e66"
+//        let myApiKey = " "
 //        let gameListUrlString = "https://api.rawg.io/api/games?key=\(myApiKey)"
 //
 //        if let gameUrl = URL(string: gameListUrlString) {
@@ -463,7 +464,7 @@ extension AllGameListTableViewController: UISearchBarDelegate {
 //
 //    /// 遊戲的詳細內容
 //    func fetchGameDetail(withId id: Int) {
-//        let myApiKey = "4001ecb101c24f03af97b09521063e66"
+//        let myApiKey = ""
 //        let gameDetailUrlString = "https://api.rawg.io/api/games/\(id)?key=\(myApiKey)"
 //
 //        if let gameDetailUrl = URL(string: gameDetailUrlString) {
