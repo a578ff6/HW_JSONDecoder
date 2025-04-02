@@ -1,6 +1,9 @@
 # 保護敏感資料
 Secrets.plist
 
+# 忽略 SPM 快取資料夾
+HW_JSONDecoder.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/
+
 # 常見 macOS 開發忽略項目
 .DS_Store
 *.xcuserstate
